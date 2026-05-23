@@ -1,0 +1,11 @@
+src/
+├── components/
+├── pages/
+├── layouts/
+├── lib/
+├── hooks/
+├── services/
+├── types/
+├── App.tsx
+├── main.tsx
+└── index.css
