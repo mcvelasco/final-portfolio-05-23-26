@@ -59,7 +59,11 @@ export default function AdminDashboard() {
       setExperiences([])
       return
     }
-    const { data } = await supabase.from('experiences').select('*').eq('owner', owner).order('start_date', { ascending: false })
+    const { data, error } = await supabase.from('experiences').select('*').eq('owner', owner).order('id', { ascending: false })
+    if (error) {
+      console.error('Unable to fetch admin experiences:', error.message)
+      return
+    }
     if (data) setExperiences(data)
   }
 

@@ -22,7 +22,11 @@ export default function Home() {
   }
 
   async function fetchExperiences() {
-    const { data } = await supabase.from('experiences').select('*').order('created_at', { ascending: false })
+    const { data, error } = await supabase.from('experiences').select('*').order('id', { ascending: false })
+    if (error) {
+      console.error('Unable to fetch experiences:', error.message)
+      return
+    }
     if (data) setExperiences(data)
   }
 
