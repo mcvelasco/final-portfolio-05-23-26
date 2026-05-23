@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
 import { motion } from 'framer-motion'
+import logoImg from '../assets/NA-logo.png'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -33,9 +34,7 @@ export default function Navbar() {
       className="fixed top-0 w-full z-50 bg-[#0e1514]/80 backdrop-blur-xl border-b border-[#59de9b]/20"
     >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <h1 className="text-[#59de9b] text-3xl font-extrabold tracking-tight">
-          NEON_ARCHIVE
-        </h1>
+        <img src={logoImg} alt="NEON_ARCHIVE" className="h-10 w-auto" />
 
         <nav className="hidden md:flex gap-8 text-sm uppercase tracking-widest">
           <Link to="/" className="text-[#87ffc6]">Home</Link>

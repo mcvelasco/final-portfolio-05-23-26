@@ -4,7 +4,6 @@ import AdminDashboard from './pages/AdminDashboard'
 import Login from './pages/Login'
 import ProjectDetail from './pages/ProjectDetail'
 import Contact from './pages/Contact'
-import NotFound from './pages/NotFound'
 import ErrorBoundary from './components/ErrorBoundary'
 
 export default function App() {
@@ -17,7 +16,6 @@ export default function App() {
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
         </Routes>
       </ErrorBoundary>
     </BrowserRouter>

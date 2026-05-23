@@ -49,10 +49,10 @@ export default function Hero({ profile, avatarSrc }: Props) {
   return (
     <section className="pt-40 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <motion.div initial={{ x: -20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
-        <p className="uppercase tracking-[0.3em] text-[var(--neon)] text-sm mb-4">SUBJECT_IDENTITY_PROTOCOL</p>
+        <p className="uppercase tracking-[0.3em] text-[var(--neon)] text-sm mb-4">ROOT_USER_PORTFOLIO</p>
 
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-          ARCHITECTING <span className="text-[var(--primary)]">DIGITAL</span> DIMENSIONS
+        DEVELOPING<span className="text-[var(--primary)]"> HIGH-IMPACT</span> WEB SPACES
         </h1>
 
         <div className="glass-panel p-6 rounded-xl max-w-2xl">
